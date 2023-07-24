@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const signOutHandler = async() => {
     await signOutUser();
-    setCurrentUser(null);
+    setCurrentUser();
   }
 
   return (
@@ -40,7 +40,7 @@ const Navigation = () => {
                   SIGN IN
               </Link>
             )
-      }
+          }
         </div>
       </div>
       <Outlet />
