@@ -38,12 +38,12 @@ const INITIAL_STATE = {
     currentUser: null
 }
 
-export const UserProvider = ({ children }) => {
+export const UserProvider =  ({ children }) => {
 
     // const [currentUser , setCurrentUser] = useState(null);
     const[{currentUser} , dispatch] = useReducer(userReducer , INITIAL_STATE);
     console.log(currentUser);
-
+ 
     const setCurrentUser = (user) => {
         // whenever you call it you pass it an action object 
         // if you want a user reducer to recieve an action you have to call it 
